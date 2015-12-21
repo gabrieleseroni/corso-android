@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CalculatorDemo</string>
+
+    <string-array name="operazioni">
+        <item>+</item>
+        <item>-</item>
+        <item>x</item>
+        <item>/</item>
+    </string-array>
+</resources>

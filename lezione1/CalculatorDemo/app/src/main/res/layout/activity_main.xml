@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="it.elbuild.mobile.calculatordemo.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/operandi"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/primo_valore"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="45"
+            android:gravity="center"
+            android:inputType="number"
+            android:background="@android:color/darker_gray"
+            android:maxLength="5"
+            android:hint="Inserisci un valore"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="10"/>
+        <EditText
+            android:id="@+id/secondo_valore"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:maxLength="5"
+            android:background="@android:color/darker_gray"
+            android:layout_height="50dp"
+            android:layout_weight="45"
+            android:inputType="number"
+            android:hint="Inserisci un valore"/>
+
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/operandi"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        />
+    <Button
+        android:id="@+id/calcola_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Calcola"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>
