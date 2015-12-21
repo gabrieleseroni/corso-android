@@ -22,7 +22,7 @@
             android:layout_weight="45"
             android:gravity="center"
             android:inputType="number"
-            android:background="@android:color/lighter_gray"
+            android:background="#cfcfcf"
             android:maxLength="5"
             android:hint="Inserisci un valore"/>
         <Space
@@ -35,7 +35,7 @@
             android:padding="10dp"
             android:gravity="center"
             android:maxLength="5"
-            android:background="@android:color/lighter_gray"
+            android:background="#cfcfcf"
             android:layout_height="50dp"
             android:layout_weight="45"
             android:inputType="number"
