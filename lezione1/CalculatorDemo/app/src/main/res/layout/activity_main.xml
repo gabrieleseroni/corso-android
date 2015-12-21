@@ -22,7 +22,7 @@
             android:layout_weight="45"
             android:gravity="center"
             android:inputType="number"
-            android:background="@android:color/darker_gray"
+            android:background="@android:color/lighter_gray"
             android:maxLength="5"
             android:hint="Inserisci un valore"/>
         <Space
@@ -35,7 +35,7 @@
             android:padding="10dp"
             android:gravity="center"
             android:maxLength="5"
-            android:background="@android:color/darker_gray"
+            android:background="@android:color/lighter_gray"
             android:layout_height="50dp"
             android:layout_weight="45"
             android:inputType="number"
@@ -51,6 +51,7 @@
         android:layout_height="50dp"
         />
     <Button
+        android:background="@android:color/holo_red_dark"
         android:id="@+id/calcola_button"
         android:layout_width="150dp"
         android:layout_height="50dp"

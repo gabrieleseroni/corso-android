@@ -19,6 +19,7 @@ public class ResultActivity extends AppCompatActivity {
         secondoOperando = (TextView)findViewById(R.id.secondo_operando);
         risultatoOperando = (TextView)findViewById(R.id.risultato);
         operazione = (TextView)findViewById(R.id.operazione);
+
         Bundle bundle = getIntent().getExtras();
         if(bundle!=null){
             primoOperando.setText(bundle.getString("primo_operando"));
