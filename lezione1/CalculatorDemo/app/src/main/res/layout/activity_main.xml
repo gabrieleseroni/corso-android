@@ -51,6 +51,7 @@
         android:layout_height="50dp"
         />
     <Button
+        android:textColor="@android:color/white"
         android:background="@android:color/holo_red_dark"
         android:id="@+id/calcola_button"
         android:layout_width="150dp"
