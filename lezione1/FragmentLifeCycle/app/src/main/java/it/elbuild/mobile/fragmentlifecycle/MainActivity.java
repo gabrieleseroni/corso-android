@@ -8,36 +8,47 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends FragmentActivity implements BlankFragment.OnFragmentInteractionListener {
+public class MainActivity extends FragmentActivity  {
 
     private Button fragmentButton;
+    private Button fragment2Button;
     private BlankFragment blankFragment;
+    private Blank2Fragment blank2Fragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        blankFragment = new BlankFragment();
+        blank2Fragment = new Blank2Fragment();
+        getFragmentManager().beginTransaction().
+                add(R.id.fragment, blankFragment).add(R.id.fragment, blank2Fragment).
+                hide(blank2Fragment).hide(blankFragment).commit();
 
         fragmentButton = (Button)findViewById(R.id.button);
+        fragment2Button = (Button)findViewById(R.id.button2);
+
         fragmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (blankFragment != null) {
-                    if (blankFragment.isVisible()) {
-                        getFragmentManager().beginTransaction().remove(blankFragment).commit();
-                        fragmentButton.setText("show fragment");
-                        blankFragment = null;
+                    if (!blankFragment.isVisible()) {
+                        getFragmentManager().beginTransaction().setCustomAnimations(R.anim.slide_in,R.anim.slide_out).hide(blank2Fragment).show(blankFragment).commit();
                     }
-                } else {
-                    blankFragment = new BlankFragment();
-                    fragmentButton.setText("remove fragment");
-                    getFragmentManager().beginTransaction().add(R.id.fragment, blankFragment, BlankFragment.TAG).commit();
+                }
+            }
+        });
+
+        fragment2Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (blank2Fragment != null) {
+                    if (!blank2Fragment.isVisible()) {
+                        getFragmentManager().beginTransaction().setCustomAnimations(R.anim.slide_in,R.anim.slide_out).hide(blankFragment).show(blank2Fragment).commit();
+                    }
                 }
             }
         });
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
 
-    }
 }

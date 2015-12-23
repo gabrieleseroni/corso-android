@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="5"
+        tools:context="it.elbuild.mobile.layouts.GridLayoutActivity">
+
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/holo_red_dark"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/black"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/holo_green_dark"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/holo_blue_bright"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/holo_orange_dark"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/darker_gray"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/holo_purple"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/white"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@color/yellow"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@color/green"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@color/celeste"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/black"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@color/blue"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/black"/>
+        <View android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@android:color/holo_red_dark"/>
+
+
+    </GridLayout>
+</RelativeLayout>

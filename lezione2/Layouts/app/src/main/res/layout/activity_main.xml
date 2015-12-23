@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="it.elbuild.mobile.layouts.MainActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinearLayout"
+        android:id="@+id/linear_layout_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/relative_button"
+        android:layout_alignEnd="@+id/relative_button"
+        android:layout_alignLeft="@+id/relative_button"
+        android:layout_alignStart="@+id/relative_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RelativeLayout"
+        android:id="@+id/relative_button"
+        android:layout_below="@+id/linear_layout_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridLayout"
+        android:id="@+id/grid_button"
+        android:layout_below="@+id/relative_button"
+        android:layout_alignRight="@+id/relative_button"
+        android:layout_alignEnd="@+id/relative_button"
+        android:layout_alignLeft="@+id/linear_layout_button"
+        android:layout_alignStart="@+id/linear_layout_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="frameLayout"
+        android:id="@+id/frame_button"
+        android:layout_below="@+id/grid_button"
+        android:layout_alignLeft="@+id/grid_button"
+        android:layout_alignStart="@+id/grid_button"
+        android:layout_alignRight="@+id/grid_button"
+        android:layout_alignEnd="@+id/grid_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebView"
+        android:id="@+id/webView_button"
+        android:layout_below="@+id/frame_button"
+        android:layout_alignLeft="@+id/frame_button"
+        android:layout_alignStart="@+id/frame_button"
+        android:layout_alignRight="@+id/frame_button"
+        android:layout_alignEnd="@+id/frame_button" />
+
+
+</RelativeLayout>

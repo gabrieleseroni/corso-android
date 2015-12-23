@@ -2,15 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_dark"
-    tools:context="it.elbuild.mobile.fragmentlifecycle.BlankFragment">
+    android:background="@android:color/holo_red_light"
+    tools:context="it.elbuild.mobile.fragmentlifecycle.Blank2Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="Fragment 1" />
+        android:text="Fragment 2" />
 
 </RelativeLayout>
