@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.elbuild.corso.wifibroadcastreceiver.MainActivity">
+
+    <Button
+        android:id="@+id/scan_button"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="50dp"
+        android:text="Scan"
+        android:layout_marginTop="20dp"
+        android:onClick="scan"/>
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/scan_button"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
