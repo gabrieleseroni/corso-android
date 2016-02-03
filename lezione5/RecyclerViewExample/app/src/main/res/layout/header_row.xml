@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:weightSum="4">
+
+    <TextView
+        android:gravity="center"
+        android:text="Version"
+        android:textColor="@android:color/white"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+    <TextView
+        android:gravity="center"
+        android:text="Codename"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:layout_weight="1.3"/>
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/api_button"
+        android:gravity="center"
+        android:text="Api"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.7"/>
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+    <TextView
+        android:gravity="center"
+        android:text="Distribution"
+        android:textColor="@android:color/white"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"/>
+</LinearLayout>
